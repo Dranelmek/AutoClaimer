@@ -1,60 +1,38 @@
-# Python
+# Dependencies
 # =========================================================================
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Node module directory
+/node_modules
 
-# C extensions
-*.so
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Distribution / packaging
-.Python
-build/
-dist/
-wheels/
-*.egg-info/
-htmlcov/
-.nox/
-.tox/
-.venv/
-venv/
-env/
-pip-log.txt
-pip-delete-this-file.txt
-.venv_pycord/
-
-# Unit test / coverage
-.pytest_cache/
-.coverage
-.mypy_cache/
-.hypothesis/
-
-# Editor/OS temporary files
+# Build artifacts
 # =========================================================================
-# VSCode
-.vscode/
-
-# IDE files (e.g., PyCharm)
-.idea/
-
-# Operating System files
-.DS_Store
-Thumbs.db
+# TypeScript/Babel compilation output
+/dist
+/build
 
 # Discord Bot Specific Files
 # =========================================================================
 # Environment variables/Token files
-# Keep your bot token and any other secret keys out of the repo.
+# ⚠️ CRITICAL: Never commit your bot's token or API keys!
 .env
-config.json # Or whatever file you store non-public config/tokens in
-secrets.py 
-*.db # Common extension for SQLite or similar databases used for bot storage
+config.json  # If you store non-public config/tokens here
+secrets.js
+*.db         # Common extension for SQLite or other local databases
 
-# Log files
-*.log
-logs/
+# IDE and Editor Files
+# =========================================================================
+# VS Code
+.vscode/
 
-# Any large temporary files or data caches the bot generates
-temp/
-cache/
+# IntelliJ/WebStorm/PyCharm/etc. (JetBrains IDEs)
+.idea/
+
+# Operating System Files
+# =========================================================================
+.DS_Store    # macOS
+Thumbs.db    # Windows
